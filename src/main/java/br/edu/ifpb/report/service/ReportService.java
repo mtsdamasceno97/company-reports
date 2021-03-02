@@ -5,8 +5,11 @@ import br.edu.ifpb.report.controller.TaxReport;
 
 public class ReportService {
 
-    ExpenseReport expenseReport = new ExpenseReport();
-    TaxReport taxReport = new TaxReport();
+    ExpenseReport expenseReport = new ExpenseReport(); //despesa
+    TaxReport taxReport = new TaxReport(); //fiscal
+
+    
+
 
     public void generateReport(String type) {
         if (type.equals("expense")) {
